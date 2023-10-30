@@ -4,8 +4,9 @@ jobs:
   build-and-test:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v3
       - name: Build
         run: |
+            ls -la 
             git checkout ab84416
             make
